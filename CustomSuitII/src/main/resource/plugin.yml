@@ -1,0 +1,7 @@
+name: CustomSuitII
+main: main.CustomSuitII
+version: 0.1
+description: plugin
+commands:
+    get:
+        
