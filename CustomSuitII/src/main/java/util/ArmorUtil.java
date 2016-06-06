@@ -159,17 +159,17 @@ public class ArmorUtil {
 		w.createExplosion(loc.getX(), loc.getY(), loc.getZ(), power, setFire, breakBlocks);
 	}
 	
-	public static void push(Player p, ItemStack last) {
-		if(last==null || last.getType()==Material.AIR){
+	public static void push(Player p, ItemStack item) {
+		if(item==null || item.getType()==Material.AIR){
 			return;
 		}
 		
 		PlayerInventory inv = p.getInventory();
 		
 		if(inv.firstEmpty()==-1){
-			ArmorUtil.dropItem(p, last);
+			ArmorUtil.dropItem(p, item);
 		}else{
-			inv.addItem(last);
+			inv.addItem(item);
 		}
 	}
 }
