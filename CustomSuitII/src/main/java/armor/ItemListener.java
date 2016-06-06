@@ -67,7 +67,7 @@ public class ItemListener implements Listener{
 	}
 	
 	@EventHandler
-	public void onDespanw(ItemDespawnEvent e){
+	public void onDespawnw(ItemDespawnEvent e){
 		Item item = e.getEntity();
 		
 		if(!isThrownItem(item)){

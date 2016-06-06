@@ -85,7 +85,7 @@ public class Veronica_Listener implements Listener {
 	}
 
 	@EventHandler
-	public void onDeath(EntityDamageEvent e) {
+	public void onDespawn(EntityDamageEvent e) {
 		Entity c = e.getEntity();
 		
 		if(c instanceof EnderCrystal){
